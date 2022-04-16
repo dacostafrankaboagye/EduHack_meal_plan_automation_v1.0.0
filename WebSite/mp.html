@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>Ashesi menu plan</title>
+    <link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+    <style>
+        .first_section {
+            margin: 5px;
+            position: center;
+            text-align: center;
+            display: inline-block;
+        }
+
+        /* Styling the area of the slides */
+        #slideshow {
+            overflow: hidden;
+            height: 750px;
+            width: 1500px;
+            margin: 0 auto;
+        }
+
+        /* Style each of the sides
+        with a fixed width and height */
+        .slide {
+            float: right;
+            height: 750px;
+            width: 1500px;
+        }
+
+        /* Add animation to the slides */
+        .slide-wrapper {
+            /* Calculate the total width on the
+        basis of number of slides */
+            width: calc(1500px * 4);
+            /* Specify the animation with the
+        duration and speed */
+            animation: slide 30s ease infinite;
+        }
+
+        /* Set the background color
+        of each of the slides */
+        .slide:nth-child(1) {
+            background: red;
+        }
+
+        .slide:nth-child(2) {
+            background:white;
+        }
+
+        .slide:nth-child(3) {
+            background: red;
+        }
+
+        .slide:nth-child(4) {
+            background: white;
+        }
+
+        /* Define the animation
+        for the slideshow */
+        @keyframes slide {
+            /* Calculate the margin-left for
+        each of the slides */
+            20% {
+                margin-left: 0px;
+            }
+
+            40% {
+                margin-left: calc(-1500px * 1);
+            }
+
+            60% {
+                margin-left: calc(-1500px * 2);
+            }
+
+            80% {
+                margin-left: calc(-1500px * 3);
+            }
+        }
+
+        #delicious_menu {
+            position: center;
+            width: 1500px;
+            height: 500px;
+        }
+
+        #first_text {
+            position: relative;
+            top: -200px;
+            right: 0px;
+            font-family: 'Merienda';
+        }
+        #second_text {
+          
+            font-family: 'Merienda';
+        }
+            #id_numbers {
+            text-align: center;
+            width: 250px;
+            height: 35px;
+        }
+
+        .second_section {
+            margin: 5px;
+            position: center;
+            text-align: center;
+            display: inline-block;
+            width: 1500px;
+            height: 500px;
+            background-color: lightsalmon;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        th {
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first_section">
+        <!-- Define the slideshow container -->
+        <div id="slideshow">
+            <div class="slide-wrapper">
+
+                <!-- Define each of the slides
+             and write the content -->
+
+                <div class="slide">
+                    <img id="delicious_menu" src="https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?cs=srgb&dl=pexels-ella-olsson-1640773.jpg&fm=jpg" alt="unsupported image" />  
+                </div>
+                <div class="slide">
+                    <img id="delicious_menu" src="https://images.unsplash.com/photo-1609534751961-f396ded2af99?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80" />  
+                </div>
+                <div class="slide">
+                    <img id="delicious_menu" src="https://wallpapercave.com/wp/wp10697851.jpg" />
+                </div>
+                <div class="slide">
+                    <img id="delicious_menu" src="https://images.pexels.com/photos/618491/pexels-photo-618491.jpeg?cs=srgb&dl=pexels-neosiam-618491.jpg&fm=jpg" />    
+                </div>
+            </div>
+        </div>
+
+        
+        <br />
+        <h1 id="first_text"><b> Ashesi Menu Plan </b></h1>
+        <h2 id="first_text"><i>Authentic, Delicious, Cuisine</i></h2>
+
+        <br />
+        <br />
+        <form>
+            <input type="text" id="id_numbers" name="id_numbers" placeholder="Student ID Number" /> &nbsp;
+            <input type="button" value="Enter" />
+        </form>
+    </div>
+    <br />
+    <div class="second_section">
+        <h1 id="second_text"><b>Big Ben's Yummy Menu!</b></h1>
+        <br />
+        <br />
+
+        <table>
+            <tr>
+                <th id="second_text">Food Items</th>
+                <th id="second_text">Time</th>
+                <th id="second_text">Price</th>
+                <th id="second_text">Availability Probablity</th>
+            </tr>
+            <br\>
+
+                <tr>
+                    <td><centre>Kenkey & Fish</centre></td>
+                    <td>1:00pm</td>
+                    <td>16 Cedis</td>
+                    <td>65%</td>
+                </tr>
+                <br\>
+                    <tr>
+                        <td><centre>Jollof & Chicken</centre></td>
+                        <td>1:00pm</td>
+                        <td>15 Cedis</td>
+                        <td>95%</td>
+                    </tr>
+                    <br\>
+                        <tr>
+                            <td><centre>Plain rice & Chicken</centre></td>
+                            <td>1:10pm</td>
+                            <td>16 Cedis</td>
+                            <td>75%</td>
+
+                        </tr>
+                    <br\>
+                        <tr>
+                            <td><centre>Fried Rice &Sausage</centre></td>
+                            <td>1:15pm</td>
+                            <td>Cedis</td>
+                            <td>90%</td>
+
+                        </tr>
+
+</table>
+    </div>
+
+</body>
+</html>
